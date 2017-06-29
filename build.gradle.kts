@@ -1,5 +1,6 @@
-allprojects {
+import org.gradle.api.tasks.bundling.Jar
 
+allprojects {
   group = "com.example"
   version = "0.0.1-SNAPSHOT"
 
@@ -7,7 +8,6 @@ allprojects {
     mavenCentral()
     maven { setUrl("https://repo.spring.io/milestone") }
   }
-
 }
 
 buildscript {
